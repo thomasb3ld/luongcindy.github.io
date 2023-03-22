@@ -1,1 +1,1 @@
-this is the compilation of code for the engineering project website
+This is the website for Chesster, our AI Chess Board Engineering Project!
