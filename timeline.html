@@ -1,0 +1,145 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap">
+        <title>
+            Chesster
+        </title>
+    </head>
+
+    <style>
+        .nav_bar{
+        list-style-type: none;
+        height: 10vh;
+        margin: 0;
+        padding: 10px 10px;
+        background-color: #FBF7F6;
+        font-family: "Oranienbaum";        
+        }
+        .nav{
+            float: right;
+        }
+        li a{
+            display: inline-block;
+            padding: 17px;
+            text-decoration: none;
+            color: black;
+            font-size: xx-large;
+        }
+
+        footer{
+            text-align: center;
+            padding: 10px 10px;
+            background-color: #FBF7F6;
+            font-family: "Oranienbaum";
+            font-size: large;
+            border: 2px solid black;
+        }
+        a{
+            text-decoration: none;
+            margin: 8px;
+            color:black;
+        }
+
+        .update{
+            padding: 10px;
+            background-color: white;
+            font-family: "Oranienbaum";
+        }
+    </style>
+
+<body style="background-image: url('https://cdn.glitch.global/3ae0dc6f-3e01-454a-9279-009dea2afd82/brown%20background.png?v=1679305373447'); 
+background-repeat: repeat; background-attachment: fixed; overflow: scroll; width: auto; height: auto;">
+    <!--Navigation Bar-->
+    <ul style= "border: 2px solid black" class="nav_bar">
+        <li class="nav"><a href= "about.html">About</a></li>
+        <li class="nav"><a href= "timeline.html">Timeline</a></li>
+        <li class="nav"><a href= "mechanical.html">Mechanical</a></li>
+        <li class="nav"><a href= "electrical.html">Electrical</a></li>
+        <li class="nav"><a href= "software.html">Software</a></li>
+        <li class="nav"><a href= "index.html">Home</a></li>
+        <li style="float: left"><a href= "index.html">Chesster</a></li>
+    </ul>
+    <!--Mech Title Card-->
+    <div style="text-align:center;">
+        <img src="https://cdn.glitch.global/e590b6e9-4ece-4487-a898-7a7faac04200/timeline%20title%20.png?v=1679524935941" alt="projtitle"
+        style="width: 855px; height: 164px;
+        padding: 150px 275px; display:inline-block;" >
+    </div>
+    <!--First Update-->
+    <div class="update">
+        <h1 style="color: darkred;"> March 8 - 14 </h1>
+        <h2 style="color:darkred">Progress</h2>
+        <ul>
+            <li>Ordered materials </li>
+            <li> Started reading up on Chess AI and how it worked</li>
+            <li> Planned electrical component design with reed sensors and multiplexers </li>
+            <li> Planned physical design with wood and laser cutting</li>
+        </ul>
+        <h1 style="color: darkred;"> March 15 - 22 </h1>
+    <!-- First Update Electrical-->
+        <h2 style="color:darkred">Weekly Objectives</h2>
+        <ul>    
+            <li>Build the box of the chess board</li>
+            <li>Work on LED coding</li>
+            <li>Work on Reed Sensor Grid</li>
+        </ul>
+        <h2 style="color:darkred">Challenges</h2>
+        <ul>
+            <li> Ran into issues with testing multiplexers. We are not sure if the multiplexers are bugged or we are testing incorrectly.  </li>
+            <li> Don't know if AI is making valid moves and choosing right squares because cannot do visual confirmation right now. </li>
+            <li> Had issues with choosing wrong dimensions but fixed by recalculating. </li>
+        </ul>
+        <h2 style="color:darkred">Progress</h2>
+        <ul>
+            <h3> Electrical </h3>
+            <li>
+                Soldered ribbon cables to multiplexers
+            </li>
+            <li>
+                Soldered ribbon cables to reed sensors and wires to other end of reed sensors for input voltages
+            </li>
+            <li>
+                Tested all reed sensors, LEDs, and arduino with battery pack to ensure they all work
+            </li>
+            <h3> Software </h3>
+            <li> 
+                Understood main arduino code file for sensors 
+            </li>
+            <li> 
+                Marked code segments to be deleted and kept other components that we needed such as invalid moves, AI moves and more. 
+            </li>
+            <li>
+                 Understood how to program LED and how we plan on utilizing LED in physical design 
+            </li>
+            <h3> Physical </h3>
+            <li> 
+                Finished outside of the chess board 
+            </li>
+            <li> 
+                Started laser cutting dividers 
+            </li>
+        </ul>
+        <h2 style="color:darkred">Next Steps</h2>
+        <ul>
+            <li> Debug multiplexers and solder headers </li>
+            <li> Connect multiplexer to arduino and its various inputs </li>
+            <li> Finish laser cutting divider system and start gluing together</li>
+            <li> Start painting top of chess board </li>
+            <li> Code LED to respond to AI output </li>
+        </ul>
+    <!--Second Update-->    
+    </div>
+    <br>
+    <!--Footer-->
+    <footer>
+        <a href= "about.html">About</a>
+        <a href= "timeline.html">Timeline</a>
+        <a href= "mechanical.html">Mechanical</a>
+        <a href= "electrical.html">Electrical</a>
+        <a href= "software.html">Software</a>
+        <a href= "index.html">Home</a>
+    </footer>
+</body>
+</html>
