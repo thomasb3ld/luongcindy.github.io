@@ -1,0 +1,206 @@
+
+  
+  /* Basic page style resets */
+  * {
+    box-sizing: border-box;
+  }
+  
+  [hidden] {
+    display: none !important;
+  }
+  
+  h1 {
+    font-size: 40px;
+  }
+  
+  h2 {
+    font-size: 32px;
+  }
+  
+  h3 {
+    font-size: 36px;
+    font-color: #000000;
+  }
+  
+  p {
+    font-size: 20px;
+  }
+  
+  @font-face {
+        font-family: "Oranienbaum";        
+    src: url("https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap")
+      format("opentype");
+  }
+  
+  @font-face {
+    font-family: 'Oranienbaum';
+    font-weight: bold;
+    src: url("https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap")
+      format("opentype");
+  }
+  
+  html {
+    background-color: #F6F6F6;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+  }
+  
+  
+  /* ANIMATIONS */
+  @keyframes fadeInAnimation {
+      0% {opacity: 0;}
+      100% {opacity: 1;}
+  }
+  
+  
+  /* BODY CLASSES */
+  
+  body {
+    font-family: "Oranienbaum";
+    background-color: #F6F6F6;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  /*About page*/
+  
+  .row {
+    display: flex;
+    margin-right: 5vw;
+    margin-left: 5vw;
+  }
+  
+  .person{
+    margin: 1vw;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+  /* Position the "next button" to the right */
+  .next1 {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev1:hover, .next1:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text1 {
+    color: white;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext1 {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+ 
+  /* Fading animation */
+  .fade1 {
+    animation-name: ;
+    animation-duration: 1.5s;
+  } 
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 700px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  /* Fading animation */
+  .fade {
+    
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  .fadebox {
+    position: relative;
+    width: 100%;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 98%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(48,48,48, 0.7);
+    padding: 1.5vw;
+    text-align: left;
+    overflow-y: scroll;
+  }
+  
+  .fadebox:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text3 {
+    text-align: center;
+    color: white;
+  /*   margin: auto;
+    width: 50%; */
+  }
+  
+  .text4{
+    text-align: left;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+  /*   margin: auto;
+    width: 50%; */
+  }
+  
+  /* HORIZONTAL SCROLL */
+  .scroll-container{
+    overflow: auto;
+    white-space: nowrap;
+    padding: 5px 70px 5px 20px;
+    background: transparent;
+    border-radius: 20px; 
+  }
+
+  
