@@ -21,17 +21,15 @@
         background-color: #FBF7F6;
         font-family: "Oranienbaum";        
     }
-
-    li{
-        float: right;
-    }
     li a{
+        float:right;
         display: inline-block;
         padding: 17px;
         text-decoration: none;
         color: black;
         margin-bottom: 10px;
     }
+    
     footer{
         text-align: center;
         padding: 10px 10px;
@@ -51,7 +49,8 @@
 <body style="background-image: url('https://cdn.glitch.global/e590b6e9-4ece-4487-a898-7a7faac04200/please%20let%20this%20be%20the%20final%20one.png?v=1679298844233'); 
 background-repeat: repeat; background-attachment: fixed; overflow: scroll; width: auto; height: auto;">
     <!--Navigation Bar-->
-    <ul style= "border: 2px solid black">
+    <ul style= "
+    border: 2px solid black">
         <li><a href= "about.html">About</a></li>
         <li><a href= "timeline.html">Process</a></li>
         <li><a href= "mechanical.html">Mechanical</a></li>
@@ -67,45 +66,63 @@ background-repeat: repeat; background-attachment: fixed; overflow: scroll; width
         padding: 150px 275px; display: inline-block;" >
     </div>
     <!--Purpose and Design-->
-    <div style="background-color: #FBF7F6; width: auto; height: fit-content; border: 2px solid black; 
+    <div style="background-color: #FBF7F6; width: auto; height:fit-content; border: 2px solid black; 
     font-family: Oranienbaum; ;text-align: left;margin:10px">
         <p style="font-weight: bold; text-align: center;"> 
             Purpose
         </p>
-        <p style="text-align: center;">
-        The purpose of the project is to build a physical alternative to online chess programs such as chess com. This provides a fun and unique experience to chess players that cannot be experienced on a computer.
+        <p style="text-align: center; font-size: x-large; margin-left: 20px; margin-right: 20px;">
+        The purpose of the project is to build a physical alternative to online chess programs such as chess com. 
+        This provides a fun and unique experience to chess players that cannot be experienced on a computer. 
+        While playing, Chesster assists players by using AI to predict the next-best move, and lighting up the respective square. 
+        This square will flash green light until a chesspiece is moved on top; if the player moves the piece to a different position, the square will flash red until this error is fixed.
         </p>
         <p style="font-weight: bold;text-align: center;">
             About The Design
         </p>
         <p style="font-weight: bold;margin-left: 40px;">
-            Software:
+            Software: The Game
         </p>
         <p style="margin-left: 40px">
-            [insert software process description]
+            <ul style="margin-left: 15vh; font-size: x-large; list-style-type: disc;margin-top: -30px; margin-bottom: 17vh;margin-right: 10vh;">
+                <li>We pulled a pre-coded chess engine from online and adjusted its functions so it would light up the LEDs to display moves</li>
+                <li style="margin-left: 10vh;">Utilized a recursive minimax algorithm that worked for the arduino</li>
+                <li style="margin-left: 10vh;">Utilized alpha-beta pruning method to “cut” moves in which better possible moves have already been found</li>
+                <li style="margin-left: 10vh;">The board evaluates scores with a heuristic that checks the Most-Valuable-Victim/ Least-Valuable-Aggressor scoring system</li>
+            </ul>
         </p>
         <p style="font-weight: bold;margin-left: 40px">
-            Electrical:
+            Electrical: Below the Board
         </p>
         <p style="margin-left: 40px">
-            [insert electrical process description]
+            <ul style="margin-left: 15vh; font-size: x-large; list-style-type: disc;margin-top: -30px; margin-bottom: 10vh;margin-right: 10vh;">
+                <li>Used the Arduino Uno REV3 to store our chess engine </li>
+                <li>Reed sensors below the board sense the magnets underneath chesspieces and send the signal to the multiplexers</li>
+                <li>Multiple multiplexers connect the sensors to the arduino, allowing signals to be passed back and forth in order to make the LED display light up</li>
+            </ul>
         </p>
         <p style="font-weight: bold;margin-left: 40px">
-            Mechanical:
+            Mechanical: The Chessboard
         </p>
-        <p style="margin-left: 40px">
-            [insert mechanical process description]
-        </p>
-            
+        <p style="margin-left: 40px;">
+            <ul style="margin-left: 15vh; font-size: x-large; list-style-type: disc;margin-top: -30px; margin-bottom: 18vh;">
+
+                    <li>Chesster's plywood 'board' is a 89.5cm x 60cm x 9cm box-like structure</li>
+                    <li>The painted, checkered top sheet of wood is the chessboard itself</li>
+                    <li>Underneath this top, there lies a grid of 4-sided cubicles, each one corresponding to a square on the chessboard</li>
+                    <li style="margin-left: 10vh;">These cubicles hold the electrical and software components of Chesster</li>
+                    <li>The chesspieces were purchased from an online retailer and were modified with magnets</li>
+            </ul> 
+        </p>     
     </div>
     <!--Footer-->
     <footer>
-        <a href= "about.html">About</a>
-        <a href= "index.html">Process</a>
-        <a href= "mechanical.html">Mechanical</a>
-        <a href= "electrical.html">Electrical</a>
-        <a href= "software.html">Software</a>
         <a href= "index.html">Home</a>
+        <a href= "software.html">Software</a>
+        <a href= "electrical.html">Electrical</a>
+        <a href= "mechanical.html">Mechanical</a>
+        <a href= "timeline.html">Process</a>
+        <a href= "about.html">About</a>
     </footer>
 </body>
 </html>
