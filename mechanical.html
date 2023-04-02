@@ -3,6 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap">
+        <link href="style1.0.css" rel="stylesheet" />
         <title>
             Chesster Mechanical Components
         </title>
@@ -46,32 +47,226 @@
 <body style="background-image: url('https://cdn.glitch.global/3ae0dc6f-3e01-454a-9279-009dea2afd82/brown%20background.png?v=1679305373447'); 
 background-repeat: repeat; background-attachment: fixed; overflow: scroll; width: auto; height: auto;">
     <!--Navigation Bar-->
-    <ul style= "border: 2px solid black">
-        <li><a href= "about.html">About</a></li>
-        <li><a href= "timeline.html">Process</a></li>
-        <li><a href= "mechanical.html">Mechanical</a></li>
-        <li><a href= "electrical.html">Electrical</a></li>
-        <li><a href= "software.html">Software</a></li>
-        <li><a href= "index.html">Home</a></li>
-        <li style="float: left"><a href= "index.html">Chesster</a></li>
-    </ul>
+    <header>
+        <ul style= "border: 2px solid black; margin-bottom: 20px;">
+            <li><a href= "about.html">About</a></li>
+            <li><a href= "timeline.html">Process</a></li>
+            <li><a href= "mechanical.html">Mechanical</a></li>
+            <li><a href= "electrical.html">Electrical</a></li>
+            <li><a href= "software.html">Software</a></li>
+            <li><a href= "index.html">Home</a></li>
+            <li style="float: left;"><a href= "index.html">Chesster</a></li>
+        </ul>
+    </header>
     <!--Mech Title Card-->
     <div style="text-align: center;">
         <img src="https://cdn.glitch.global/e590b6e9-4ece-4487-a898-7a7faac04200/new%20mech%20title.png?v=1679506681267" alt="projtitle"
-        style="width: 855px; height: 164px;
-        padding: 150px 275px; display: inline-block;" >
+        style="width: 855px; height: 164px; margin-left: auto; margin-right: auto; margin-bottom: 70px; margin-top: 40px;" >
     </div>
+
+    <h1 style="font-family:'Oranienbaum'; font-size: xx-large; text-align: center; background-color: #FBF7F6;
+    border: 2px solid black;">THE CADS</h1>
+
+    <!--CAD Slideshow-->
+    <div style="margin-top:20px;margin-bottom: 20px; background-color: #dfc9c0; border: 2px black dotted; background-size: 100% 100%;">
+        <br>
+   <div class="slideshow-container">
+    <div class="mySlides">
+      <img src="https://cdn.glitch.global/e590b6e9-4ece-4487-a898-7a7faac04200/chessboard%20bottom%20(2).PNG?v=1680394348318" style="width:500px">
+      <div class="caption" style="top:90%">
+        <p>CAD of the 89.5cm x 60cm top part of Chesster. It includes the 52cm x 52cm </p>
+        <p>chessboard and space along the edges for putting captured chesspieces. This</p>
+        <p> part and all other mechanical parts were crafted out of plywood when we </p>
+        <p>brought Chesster to life.</p>
+    </div>
+    </div>
+    <div class="mySlides">
+      <img src="https://cdn.glitch.global/e590b6e9-4ece-4487-a898-7a7faac04200/chessboard%20box%20(1).PNG?v=1680394365107" style="width:500px">
+      <div class="caption" style="top:92%">
+        <p>CAD of the box that makes up Chesster's bottom. Here is where electrical</p>
+        <p> components and an 8x8 square grid structure is stored. The box measures</p>
+        <p> 89.5cm x 60cm x 9cm.</p>
+    </div>
+    </div>
+    <div class="mySlides">
+      <img src="https://cdn.glitch.global/e590b6e9-4ece-4487-a898-7a7faac04200/divider%20cad.jpeg?v=1680394235819" style="width:500px">
+      <div class="caption" style="top:95%;">
+        <p>CAD of one of the divider panels that makeup the underlyingchessboard grid.</p>
+        <p>14 of these panels were lasercut and assembled into a grid to make Chesster.</p></div>
+    </div>
+    <div class="mySlides">
+        <img src="https://cdn.glitch.global/e590b6e9-4ece-4487-a898-7a7faac04200/Chessboard%20piece%20bottom%20(1).PNG?v=1680394375178" style="width:500px">
+        <div class="caption" style="top:85%;">
+            <p>Originally, we had planned to 3D print each individual cubicle for the </p>
+            <p>grid, and to assemblethem together; we switched to lasercutting </p>
+            <p>dividers when we realized that wouldn't be feasible.</p>
+            <br>
+            <p> Here is the CAD for the cubicles. It includes 4 drilled holes in the</p>
+            <p>top corners so that the LED light would shine through. The structure</p>
+            <p>in the center represents the reed sensor and other electrical components.</p></div>
+      </div>
+      <div class="mySlides">
+        <img src="https://cdn.glitch.global/e590b6e9-4ece-4487-a898-7a7faac04200/Chessboard%20Piece%20side%20view%20(1).PNG?v=1680394357915" style="width:500px">
+        <div class="caption" style="top:100%;">
+            <p>CAD of one of the sideview of the cubicle prototype. One can see the</p>
+            <p> drilled holes on the surface more clearly. The surface would have</p>
+            <p> been what made up the chessboard on Chesster's top part.</p>
+        </div>
+      </div>
+    </div>
+    <div style="top: 50px;">
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+  <div style="margin-left: 35vh; bottom:50px">
+    <span class="dot" onclick="currentSlide(0)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+    <br>
+    <br>
+</div>
+  <!--slideshow script-->
+  <script>
+    let slideIndex = 0;
+    let timeoutId = null;
+    const slides = document.getElementsByClassName("mySlides");
+    const dots = document.getElementsByClassName("dot");
+    
+    showSlides();
+    function currentSlide(index) {
+         slideIndex = index;
+         showSlides();
+    }
+   function plusSlides(step) {
+      
+      if(step < 0) {
+          slideIndex -= 4;
+          
+          if(slideIndex < 0) {
+            slideIndex = slides.length - 1;
+          }
+      }
+      
+      showSlides();
+   }
+    function showSlides() {
+      for(let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+        dots[i].classList.remove('active');
+      }
+      slideIndex++;
+      if(slideIndex > slides.length) {
+        slideIndex = 1
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].classList.add('active');
+    }
+  </script>
+
+  <!--Process Slideshow-->
+  <h1 style="font-family:'Oranienbaum'; font-size: xx-large; text-align: center; background-color: #FBF7F6;
+    border: 2px solid black;">BRINGING THE BOARD TO LIFE:Mechanical</h1>
+
+<div style="margin-top:20px;margin-bottom: 20px; background-color: #dfc9c0; border: 2px black dotted; background-size: 100% 100%;">
+    <br>
+<div class="slideshow-container1">
+<div class="mySlides1">
+  <img src="https://cdn.glitch.global/e590b6e9-4ece-4487-a898-7a7faac04200/mysha_woodcutting_(1).jpg?v=1680413108314" style="width:500px">
+  <div class="caption1">Mysha sanding a freshly sawed off plank of plywood for the board.</div>
+</div>
+<div class="mySlides1">
+  <img src="https://cdn.glitch.global/e590b6e9-4ece-4487-a898-7a7faac04200/woodworking_2.jpg?v=1680413117415" style="width:500px">
+  <div class="caption1" style="bottom: 10vh;">
+    <p>Mysha and Warren gluing the walls to the board's bottom plank. They are working on the bottom part, the box, of the Chesster.</p>
+</div>
+</div>
+<div class="mySlides1">
+  <img src="https://cdn.glitch.global/e590b6e9-4ece-4487-a898-7a7faac04200/nailing.jpeg?v=1680413247369" style="width:500px">
+  <div class="caption1">
+    <p>Mysha and Nithika reinforcing the walls of the box with nails.</p>
+</div>
+</div>
+<div class="mySlides1">
+    <img src="https://cdn.glitch.global/e590b6e9-4ece-4487-a898-7a7faac04200/closeup_grid_(1).jpg?v=1680413090157" style="width:500px">
+    <div class="caption1" style="bottom:15vh">
+        <p>A close up of the how the lasercut, plywood divider panels came together to make the grid. Beautiful prescision.</p>
+    </div>
+  </div>
+  <div class="mySlides1">
+    <img src="https://cdn.glitch.global/e590b6e9-4ece-4487-a898-7a7faac04200/grid_w_elec_components_inside_(1).jpg?v=1680413098746" style="width:500px">        
+    <div class="caption1" style="bottom:15vh">
+        <p>Sideview of the assembled box with the completed grid and some electrical components inside.</p>
+    </div>
+</div>
+</div>
+<div style="top: 50px;">
+    <a class="prev1" onclick="plusSlides1(-1)">&#10094;</a>
+    <a class="next1" onclick="plusSlides1(1)">&#10095;</a>
+</div>
+<br>
+<div style="margin-right: 30vh;">
+<span class="dot1" onclick="currentSlide1(0)"></span>
+<span class="dot1" onclick="currentSlide1(1)"></span>
+<span class="dot1" onclick="currentSlide1(2)"></span>
+<span class="dot1" onclick="currentSlide1(3)"></span>
+<span class="dot1" onclick="currentSlide1(4)"></span>
+</div>
+<br>
+<br>
+</div>
+<!--slideshow script-->
+<script>
+let slideIndex1 = 0;
+let timeoutId1 = null;
+const slides1 = document.getElementsByClassName("mySlides1");
+const dots1 = document.getElementsByClassName("dot1");
+
+showSlides1();
+function currentSlide1(index) {
+     slideIndex1 = index;
+     showSlides1();
+}
+function plusSlides1(step) {
+  
+  if(step < 0) {
+      slideIndex1 -= 4;
+      
+      if(slideIndex1 < 0) {
+        slideIndex1 = slides.length - 1;
+      }
+  }
+  
+  showSlides1();
+}
+function showSlides1() {
+  for(let i = 0; i < slides1.length; i++) {
+    slides1[i].style.display = "none";
+    dots1[i].classList.remove('active1');
+  }
+  slideIndex1++;
+  if(slideIndex1 > slides1.length) {
+    slideIndex1 = 1
+  }
+  slides1[slideIndex1 - 1].style.display = "block";
+  dots1[slideIndex1 - 1].classList.add('active1');
+}
+</script>
+
     <!--Footer-->
+
     <footer>
-        <a href= "about.html">About</a>
-        <a href= "timeline.html">Process</a>
-        <a href= "mechanical.html">Mechanical</a>
-        <a href= "electrical.html">Electrical</a>
-        <a href= "software.html">Software</a>
         <a href= "index.html">Home</a>
+        <a href= "software.html">Software</a>
+        <a href= "electrical.html">Electrical</a>
+        <a href= "mechanical.html">Mechanical</a>
+        <a href= "timeline.html">Process</a>
+        <a href= "about.html">About</a>
     </footer>
 </body>
-
 
 
 </html>
