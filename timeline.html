@@ -3,12 +3,14 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap">
+        <link href="styleTL.css" rel="stylesheet" />
         <title>
             Chesster Process Page
         </title>
     </head>
 
     <style>
+
         .nav_bar{
         list-style-type: none;
         height: 10vh;
@@ -64,83 +66,100 @@ background-repeat: repeat; background-attachment: fixed; overflow: scroll; width
     <!--Mech Title Card-->
     <div style="text-align:center;">
         <img src="https://cdn.glitch.global/e590b6e9-4ece-4487-a898-7a7faac04200/timeline%20title%20.png?v=1679524935941" alt="projtitle"
-        style="width: 855px; height: 164px;
-        padding: 150px 275px; display:inline-block;" >
+        style="width: 845px; height: 162px;margin-top: 40px;margin-bottom: 40px;display:inline-block;" >
     </div>
     <!--First Update-->
-    <div class="update" style="border: 2px solid black">
-        <h1 style="color: darkred;"> March 8 - 14 </h1>
-        <h2 style="color:darkred">Progress</h2>
-        <ul>
-            <li>Ordered materials </li>
-            <li> Started reading up on Chess AI and how it worked</li>
-            <li> Planned electrical component design with reed sensors and multiplexers </li>
-            <li> Planned physical design with wood and laser cutting</li>
-        </ul>
-        <h1 style="color: darkred;"> March 15 - 22 </h1>
-    <!-- First Update Electrical-->
-        <h2 style="color:darkred">Weekly Objectives</h2>
-        <ul>    
-            <li>Build the box of the chess board</li>
-            <li>Work on LED coding</li>
-            <li>Work on Reed Sensor Grid</li>
-        </ul>
-        <h2 style="color:darkred">Challenges</h2>
-        <ul>
-            <li> Ran into issues with testing multiplexers. We are not sure if the multiplexers are bugged or we are testing incorrectly.  </li>
-            <li> Don't know if AI is making valid moves and choosing right squares because cannot do visual confirmation right now. </li>
-            <li> Had issues with choosing wrong dimensions but fixed by recalculating. </li>
-        </ul>
-        <h2 style="color:darkred">Progress</h2>
-        <ul>
-            <h3> Electrical </h3>
-            <li>
-                Soldered ribbon cables to multiplexers
-            </li>
-            <li>
-                Soldered ribbon cables to reed sensors and wires to other end of reed sensors for input voltages
-            </li>
-            <li>
-                Tested all reed sensors, LEDs, and arduino with battery pack to ensure they all work
-            </li>
-            <h3> Software </h3>
-            <li> 
-                Understood main arduino code file for sensors 
-            </li>
-            <li> 
-                Marked code segments to be deleted and kept other components that we needed such as invalid moves, AI moves and more. 
-            </li>
-            <li>
-                 Understood how to program LED and how we plan on utilizing LED in physical design 
-            </li>
-            <h3> Mechanical </h3>
-            <li> 
-                Finished outside of the chess board 
-            </li>
-            <li> 
-                Started laser cutting dividers 
-            </li>
-        </ul>
-        <h2 style="color:darkred">Next Steps</h2>
-        <ul>
-            <li> Debug multiplexers and solder headers </li>
-            <li> Connect multiplexer to arduino and its various inputs </li>
-            <li> Finish laser cutting divider system and start gluing together</li>
-            <li> Start painting top of chess board </li>
-            <li> Code LED to respond to AI output </li>
-        </ul>
-        <h2 style="color:darkred">Photos</h2>
-        <img src="https://cdn.glitch.global/e590b6e9-4ece-4487-a898-7a7faac04200/image%201.jpeg?v=1679309821036" style="width: 200px">
-        <img src="https://cdn.glitch.global/e590b6e9-4ece-4487-a898-7a7faac04200/image%203.jpeg?v=1679309828353" style="width:200px">
-        <img src="IMG_3175.jpg" style="width:200px">
-        <img src="IMG_4566.jpg" style="width:204px">
-        <img src="brian.png" style="width:200px">
+    <div class="container">
+        <div class="timeline">
+            
+            <div class="line" style="margin-top: 25px;"></div>
+            
+            <div class="section">
+                <div class="content" style="text-align: center;">
+                    <h1 style="color: darkred;  margin: 2px;"> Progress </h1>
+                    <p style="color:black; margin: 7px;">
+                        We ordered the materials and started to parse through the source code of
+                        the ChessAI. We also planned the electrical component design with reed sensors 
+                        and multiplexers. Finally, we planned the physical design with wood and laser cutting
+                    </p>
+                    <div class="img">
+                        <img src="brian.png" style = "width: 300px; height: 300px; border-radius: 10px; border: 1px solid black;">
+                    </div>
+                </div>
+            </div>
 
-    <!--Second Update-->    
+            
+            <div class="section">
+                <div class="bead"></div>
+                <div class="content" style="text-align: center;">
+                    <h1 style="color: darkred; margin: 2px;"> Weekly Objectives </h1>
+                    <p style="color:black; margin: 7px;">
+                        We wanted to first build the physical chess board where we were able to 
+                        complete within the first weeks. We also started to learn how to code on the 
+                        Arduino with the FastLED library. Finally, we worked on the Reed Sensor grid 
+                        and testing to see if they worked.
+                    </p>
+                    <div class="img">
+                        <img src="https://cdn.glitch.global/e590b6e9-4ece-4487-a898-7a7faac04200/image%203.jpeg?v=1679309828353"
+                        style = "width: 300px; height: 300px; border-radius: 10px; border: 1px solid black;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="bead"></div>
+                <div class="content" style="text-align: center;">
+                    <h1 style="color: darkred; margin: 2px;"> Challenges </h1>
+                    <p style="color:black; margin: 7px;">
+                        We struggled in the beginning with testing the multiplexers. Especially, 
+                        because we didn't know if the multiplexers were bugged or if we were testing
+                        them incorrectly. In terms of software, we didn't know if the code worked.
+                        Finally, we had issues with choosing the wrong dimensions and had to recalculate.
+                    </p>
+                    <div class="img">
+                        <img src="IMG_4566.png" style = "width: 300px; height: 300px; border-radius: 10px; border: 1px solid black;">
+                    </div>  
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="bead"></div>
+                <div class="content" style="text-align: center;">
+                    <h1 style="color: darkred; margin: 2px;"> Electrical Progress </h1>
+                    <p style="color:black; margin: 7px;">
+                        We were able to solder all of the ribbon cables to the multiplexers and 
+                        the reed sensors and also soldered the wires to the other end of sensors 
+                        for input voltages. We tested all of the sensores, LEDs, and Arduino
+                    </p>
+                    <div class="img">
+                        <img src="IMG_3175.png" style = "width: 300px; height: 300px; border-radius: 10px; border: 1px solid black;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" style="margin-bottom: 0;">
+                <div class="bead"></div>
+                <div class="content" style="text-align: center;">
+                    <h1 style="color: darkred; margin: 2px;"> Software Progress </h1>
+                    <p style="color:black; margin: 7px;">
+                        We were able to understand the source code for the AI and how it evaluates
+                        the board. We also marked segments of the code that weren't necessary in 
+                        our implementation and understood how to use the LED code.
+                    </p>
+                    <div class="img">
+                        <img src="https://cdn.glitch.global/e590b6e9-4ece-4487-a898-7a7faac04200/image%201.jpeg?v=1679309821036"
+                        style = "width: 300px; height: 300px; border-radius: 10px; border: 1px solid black;">
+                    </div>
+                </div>
+            </div>
+
+            
     </div>
-    <br>
+ 
+    <script src="timeline.js"></script>
+
     <!--Footer-->
-    <footer>
+    <footer style="display: flex; margin-top: 40px">
         <a href= "about.html">About</a>
         <a href= "timeline.html">Process</a>
         <a href= "mechanical.html">Mechanical</a>
