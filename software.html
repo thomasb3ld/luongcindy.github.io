@@ -10,24 +10,26 @@
 
     <style>
         /*navigation bar*/
-        ul{
+        .nav_bar{
         list-style-type: none;
         height: 10vh;
         margin: 0;
-        padding: 10px 10px;
+        padding: 1px 10px;
         background-color: #FBF7F6;
         font-family: "Oranienbaum";        
-    }
+        }
 
-    li{
+    .nav{
         float: right;
     }
-    li a{
+    .nav_link{
         display: inline-block;
-        padding: 17px;
+        padding: 15px;
         text-decoration: none;
         color: black;
         font-size: xx-large;
+        margin: 8px;
+        color:black;
     }
     /*footer style*/
     footer{
@@ -38,30 +40,72 @@
         font-size: larger;
         border: 2px solid black;
     }
-    a{
-        text-decoration: none;
-        margin: 8px;
-        color:black;
+    h2{
+        color: darkred;
     }
+    .update{
+            padding: 10px;
+            background-color: white;
+            border: 2px solid black;
+            font-family: "Oranienbaum";
+        }
     </style>
  
  <body style="background-image: url('https://cdn.glitch.global/3ae0dc6f-3e01-454a-9279-009dea2afd82/brown%20background.png?v=1679305373447'); 
  background-repeat: repeat; background-attachment: fixed; overflow: scroll; width: auto; height: auto;">
      <!--Navigation Bar-->
-     <ul style= "border: 2px solid black">
-         <li><a href= "about.html">About</a></li>
-         <li><a href= "timeline.html">Process</a></li>
-         <li><a href= "mechanical.html">Mechanical</a></li>
-         <li><a href= "electrical.html">Electrical</a></li>
-         <li><a href= "software.html">Software</a></li>
-         <li><a href= "index.html">Home</a></li>
-         <li style="float: left"><a href= "index.html">Chesster</a></li>
+     <ul style= "border: 2px solid black" class="nav_bar">
+        <li class="nav"><a class = "nav_link" href= "about.html">About</a></li>
+        <li class="nav"><a class = "nav_link" href= "timeline.html">Process</a></li>
+        <li class="nav"><a class = "nav_link" href= "mechanical.html">Mechanical</a></li>
+        <li class="nav"><a class = "nav_link" href= "electrical.html">Electrical</a></li>
+        <li class="nav"><a class = "nav_link" href= "software.html">Software</a></li>
+        <li class="nav"><a class = "nav_link" href= "index.html">Home</a></li>
+        <li style="float: left"><a class = "nav_link" href= "index.html">Chesster</a></li>
      </ul>
  <!--Software Title Card-->
  <div style="text-align: center;">
     <img src="https://cdn.glitch.global/e590b6e9-4ece-4487-a898-7a7faac04200/software%20title.png?v=1679505483075" alt="projtitle"
     style="width: 855px; height: 164px;
     padding: 150px 275px; display: inline-block;" >
+</div>
+
+<div class="update">
+
+    <h2> Code </h2>
+    <ul> 
+        <li> All the code is written in C++ for the Arduino. </li>
+        <li> To send the code to the Arduino, we use the <a href="https://www.arduino.cc/en/software"> Arduino IDE </a> </li>
+    </ul>
+    <h2> Chess AI </h2>
+    <ul> 
+        <li> The AI we're using is created by <a href="https://home.hccnet.nl/h.g.muller/max-src2.html"> H.G. Muller </a> and ported to the Arduino by Diego Cueva. This AI was preferred because of its small size (< 2kb) which allowed us not to overload the Arduino's memory causing crashing errors. </li>
+        <li> The chess AI utilizes the minimax algorithm that looks ahead at each piece's moves and scores them based on 
+            how much of a positional or material advantage that the move gains, and then returns the most optimal move. </li>
+        <li> In order to cut the search for the most optimal move down, the algorithm uses Alpha-Beta pruning which avoids checking moves and branches that are already worse than the current searched moves.</li>
+        <li> The chess AI checks for valid/invalid moves and winning/losing the game which we display to the user through the use of LEDs </li>
+    </ul>
+
+    <h2> LEDs </h2>
+    <ul>
+        <li> We used the <a href="https://fastled.io"> FastLED </a> library to control our LEDs and light them up to different colors. </li>
+        <li> The LEDs are in pairs of 2 under each square, skipping 3 after every row to account for physical design. </li>
+        <li> We used the below mapping of coordinates to LEDs to know which LEDs to turn on for specific moves. For example if we wanted to light up square A8 we would need to turn on LEDS 133 and 134. </li>
+        <br>
+        <img src="led_mapping.jpg" style="width:800px"> 
+    </ul>
+
+    <h2> Reading Chess Input </h2>
+    <ul>
+        <li> The 16 to 1 multiplexers can be turned on and off by sending a signal through the Arduino. By "shutting off" three of the multiplexers, we can read all the inputs from one multiplexer to get each piece's locations. </li>
+        <li> These inputs are then put into an array and given to the AI to output a move. </li>
+        <li> The code is constantly looping to check for button inputs. Once it detects the end turn button, the rest of the code runs. </li>
+    </ul>
+
+    <h2> Version Control: Github </h2>
+    <ul>
+        <li> We used two seperate githubs - one for the website, one for the code - to keep track of who makes what edits and revert back to previous stages if necessary.</li>
+    </ul>
 </div>
 <!--Footer-->
 <footer>
