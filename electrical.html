@@ -3,6 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oranienbaum&display=swap">
+        <link href="style2.css" rel="stylesheet" />
         <title>
             Chesster Electrical Components
         </title>
@@ -12,15 +13,10 @@
         /*navigation bar*/
         ul{
         list-style-type: none;
-        height: 10vh;
-        margin: 0;
+        height: 14vh ;
         padding: 10px 10px;
         background-color: #FBF7F6;
         font-family: "Oranienbaum";        
-    }
-
-    li{
-        float: right;
     }
     li a{
         display: inline-block;
@@ -28,133 +24,39 @@
         text-decoration: none;
         color: black;
         font-size: xx-large;
+        float: right;
     }
     /*footer style*/
-    footer{
+    #footer{
         text-align: center;
         padding: 10px 10px;
         background-color: #FBF7F6;
         font-family: "Oranienbaum";
         font-size: larger;
         border: 2px solid black;
+        position: absolute;
+        left:0px;
+        bottom:auto;
+        width:100%;
+        height: fit-content;
+        margin-top: 20vh;
     }
     a{
         text-decoration: none;
         margin: 8px;
         color:black;
     }
-    /*carousel style*/
-.mySlides {
-    display: none;
-    ;
-  }
-  img {
-    vertical-align: middle;
-  }
-  .slideshow-container {
-    max-width: 500px;
-    position: relative;
-    margin: auto;
-  }
-  /* Next & previous buttons */
-  .prev,
-  .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -25\2px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-  }
-  /* Position the "next button" to the right */
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  /* Caption text */
-  .text {
-    color: #ffffff;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-    text-shadow: 1px solid black
-  }
-  /* Number text (1/3 etc) */
-  .numbertext {
-    color: #ffffff;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  /* The dots/bullets/indicators */
-  .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #999999;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-  .active,
-  .dot:hover {
-    background-color: #111111;
-  }
-  /* Fading animation 
-  .fade {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-  }
-  @-webkit-keyframes fade {
-    from {
-      opacity: .4
-    }
-    to {
-      opacity: 1
-    }
-  }
-  @keyframes fade {
-    from {
-      opacity: .4
-    }
-    to {
-      opacity: 1
-    }
-  }
-  */
-  /* On smaller screens, decrease text size */
-  @media only screen and (max-width: 300px) {
-    .prev,
-    .next,
-    .text {
-      font-size: 11px
-    }
-  }
-    
+    li{line-height: 50px}
+    .underline{ border-bottom:1px solid #000000; max-width: 78vh; padding-bottom:-100px;}
+    .underline2{border-bottom:1px solid #000000; max-width: 66vh; padding-bottom:-100px;}
+    li b{ font-size: large; font-weight: normal;}
     </style>
 
 <body style="background-image: url('https://cdn.glitch.global/e590b6e9-4ece-4487-a898-7a7faac04200/please%20let%20this%20be%20the%20final%20one.png?v=1679298844233'); 
 background-repeat: repeat; background-attachment: fixed; overflow: scroll; width: auto; height: auto;">
     <!--Navigation Bar-->
-    <ul style= "border: 2px solid black">
+    <header>
+    <ul style= "border: 2px solid black;">
         <li><a href= "about.html">About</a></li>
         <li><a href= "timeline.html">Process</a></li>
         <li><a href= "mechanical.html">Mechanical</a></li>
@@ -163,92 +65,348 @@ background-repeat: repeat; background-attachment: fixed; overflow: scroll; width
         <li><a href= "index.html">Home</a></li>
         <li style="float: left"><a href= "index.html">Chesster</a></li>
     </ul>
+  </header>
+
     <!--Electrical Title Card-->
     <div style="text-align: center;">
         <img src="https://cdn.glitch.global/e590b6e9-4ece-4487-a898-7a7faac04200/new%20elec%20title.png?v=1679506688424" alt="projtitle"
-        style="width: 845px; height: 162px;
-        padding: 150px 275px; display: inline-block;" >
+        style="width: 845px; height: 162px;margin-top: 60px;margin-bottom: 85px;" >
     </div>
-    <!--Slideshow-->
-    <div class="slideshow-container">
-        <div class="mySlides fade">
-          <div class="numbertext">1 / 3</div>
-          <img src="https://cdn.glitch.global/e590b6e9-4ece-4487-a898-7a7faac04200/image%201.jpeg?v=1679309821036" style="width:100%">
-          <div class="text">Mylinh measuring the reed sensor's magnetic sensitivity through the board.</div>
-        </div>
-        <div class="mySlides fade">
-          <div class="numbertext">2 / 3</div>
-          <img src="https://cdn.glitch.global/e590b6e9-4ece-4487-a898-7a7faac04200/image%202.jpeg?v=1679309824313" style="width:100%">
-          <div class="text">Further measuring/testing.</div>
-        </div>
-        <div class="mySlides fade">
-          <div class="numbertext">3 / 3</div>
-          <img src="https://cdn.glitch.global/e590b6e9-4ece-4487-a898-7a7faac04200/image%203.jpeg?v=1679309828353" style="width:100%">
-          <div class="text">Mysha holding up the graphed out board w/ reed sensors attached.</div>
-        </div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-      <br>
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(0)"></span>
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-      </div>
-      <div style="background-color: #FBF7F6; border: 2px solid black; margin-left: 50px; margin-right: 50px; margin-bottom: 20px; 
-      margin-top: 20px;padding: 20px;font-size: large;font-family: Oranienbaum; text-align: center;">
-        In order for the board to detect when and where chess pieces are being placed, it will utilize reed sensors and magnets. A reed sensor is attached underneath each chess square that makes up the wooden board. Magnets are drilled and glued into premade chesspieces for the sensors to detect. 
-      </div>
-      <!--slideshow script-->
-      <script>
-        let slideIndex = 0;
-        let timeoutId = null;
-        const slides = document.getElementsByClassName("mySlides");
-        const dots = document.getElementsByClassName("dot");
-        
-        showSlides();
-        function currentSlide(index) {
-             slideIndex = index;
-             showSlides();
-        }
-       function plusSlides(step) {
-          
-          if(step < 0) {
-              slideIndex -= 2;
+
+    <!--Electricity Flow Table-->
+    <div class="row">
+      <div class="column">
+        <table style="background-color: #FBF7F6;">
+          <th></th>
+          <th style="margin-left: auto;margin-right: auto; font-size: xx-large;font-family: Oranienbaum;">Electrical Flow</th>
+          <th></th>
+          <tr>
+            <td class="enemy"></td>
+            <td class="friend">
+              <div id="overlay" onclick="off()">
+                <div id="text">Player moves chesspiece with a magnetic bottom onto a square.</div>
+              </div>
               
-              if(slideIndex < 0) {
-                slideIndex = slides.length - 1;
-              }
-          }
-          
-          showSlides();
-       }
-        function showSlides() {
-          for(let i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-            dots[i].classList.remove('active');
-          }
-          slideIndex++;
-          if(slideIndex > slides.length) {
-            slideIndex = 1
-          }
-          slides[slideIndex - 1].style.display = "block";
-          dots[slideIndex - 1].classList.add('active');
-           if(timeoutId) {
-              clearTimeout(timeoutId);
-           }
-          timeoutId = setTimeout(showSlides, 10000); // Change image every 5 seconds
+              <div style="text-align: center;">
+                <button style="font-family: Oranienbaum; font-size: x-large; font-weight: bold;;background-color: #FBF7F6;border:2px solid black"
+                 onclick="on()">STEP 1</button>
+              </div>
+              <script>
+                function on() {
+                  document.getElementById("overlay").style.display = "block";
+                }
+                
+                function off() {
+                  document.getElementById("overlay").style.display = "none";
+                }
+                </script>
+              <img src="https://cdn.glitch.global/e590b6e9-4ece-4487-a898-7a7faac04200/chess-piece.png?v=1680421760491" style="width:90px;">
+            </td>
+            <td class="enemy"></td>
+          </tr>
+          <tr>
+            <td class="friend">
+              <div id="overlay2" onclick="off2()">
+                <div id="text2">A reed sensor underneath the square senses the magnet's field and sends a 5 volt signal through a connected wire.</div>
+              </div>
+              
+              <div style="text-align: center;">
+                <button style="font-family: Oranienbaum; font-size: x-large; font-weight: bold;;background-color: #FBF7F6;border:2px solid black"
+                 onclick="on2()">STEP 2</button>
+              </div>
+              <script>
+                function on2() {
+                  document.getElementById("overlay2").style.display = "block";
+                }
+                
+                function off2() {
+                  document.getElementById("overlay2").style.display = "none";
+                }
+                </script>
+              <img src="https://cdn.glitch.global/e590b6e9-4ece-4487-a898-7a7faac04200/chess-piece.png?v=1680421760491" style="width:90px;">
+            </td>
+            <td class="enemy"></td>
+            <td class="friend">
+              <div id="overlay3" onclick="off3()">
+                <div id="text3">The wire carries the 5 volt signal to one of the multiplexers, which is in turn connected to the Arduino.</div>
+              </div>
+              
+              <div style="text-align: center;">
+                <button style="font-family: Oranienbaum; font-size: x-large; font-weight: bold;;background-color: #FBF7F6;border:2px solid black"
+                 onclick="on3()">STEP 3</button>
+              </div>
+              <script>
+                function on3() {
+                  document.getElementById("overlay3").style.display = "block";
+                }
+                
+                function off3() {
+                  document.getElementById("overlay3").style.display = "none";
+                }
+                </script>
+              <img src="https://cdn.glitch.global/e590b6e9-4ece-4487-a898-7a7faac04200/chess-piece.png?v=1680421760491" style="width:90px;">
+            </td>
+          </tr>
+          <tr>
+            <td class="enemy">
+              <div id="overlay4" onclick="off4()">
+                <div id="text4">The Arduino recieves the signal, and the code within calculates which square the player should place their piece next. 
+                  The code outputs the LED index of this new square.</div>
+              </div>
+              
+              <div style="text-align: center;">
+                <button style="font-family: Oranienbaum; font-size: x-large; font-weight: bold;;background-color: #B4C89B;border:2px solid black"
+                 onclick="on4()">STEP 4</button>
+              </div>
+              <script>
+                function on4() {
+                  document.getElementById("overlay4").style.display = "block";
+                }
+                
+                function off4() {
+                  document.getElementById("overlay4").style.display = "none";
+                }
+                </script>
+              <img src="https://cdn.glitch.global/e590b6e9-4ece-4487-a898-7a7faac04200/chess-piece.png?v=1680421760491" style="width:90px;">
+            </td>
+            <td class="friend"></td>
+            <td class="enemy">
+              <div id="overlay5" onclick="off5()">
+                <div id="text5">The new index information is sent out of the Arduino through output pins, which are connected to wires.
+                  These wires transfer the output to the LEDs.
+                </div>
+              </div>
+              
+              <div style="text-align: center;">
+                <button style="font-family: Oranienbaum; font-size: x-large; font-weight: bold;;background-color: #B4C89B;border:2px solid black"
+                 onclick="on5()">STEP 5</button>
+              </div>
+              <script>
+                function on5() {
+                  document.getElementById("overlay5").style.display = "block";
+                }
+                
+                function off5() {
+                  document.getElementById("overlay5").style.display = "none";
+                }
+                </script>
+              <img src="https://cdn.glitch.global/e590b6e9-4ece-4487-a898-7a7faac04200/chess-piece.png?v=1680421760491" style="width:90px;">
+            </td>
+          </tr>
+          <tr>
+            <td class="friend"></td>
+            <td class="enemy">
+              <div id="overlay6" onclick="off6()">
+                <div id="text6">The LED at the new square lights up green! If the player tries to move their chesspiece to a different square,
+                  the lit up square will shine red until the chesspiece is moved back.</div>
+              </div>
+              
+              <div style="text-align: center;">
+                <button style="font-family: Oranienbaum; font-size: x-large; font-weight: bold;;background-color: #B4C89B;border:2px solid black"
+                 onclick="on6()">STEP 6</button>
+              </div>
+              <script>
+                function on6() {
+                  document.getElementById("overlay6").style.display = "block";
+                }
+                
+                function off6() {
+                  document.getElementById("overlay6").style.display = "none";
+                }
+                </script>
+              <img src="https://cdn.glitch.global/e590b6e9-4ece-4487-a898-7a7faac04200/chess-piece.png?v=1680421760491" style="width:90px;">
+            </td>
+            <td class="friend"></td>
+          </tr>
+        </table>
+
+        
+      </div>
+      <div class="column">
+        <table style="background-color: #FBF7F6; width: 92vh;">
+          <tr>
+            <th style="font-size: xx-large; font-family: Oranienbaum;text-align: left;border:black dotted 2px;">Materials List</th>
+          </tr>
+          <tr>
+            <td style="border: black 2px dotted;font-size: x-large; font-family: Oranienbaum;">
+              <ul style="list-style-type: disc;height: fit-content; margin-left: 30px;">
+              <li class="underline">Reed Sensors</li>
+              <li class="underline2"style="margin-left: 80px;"><b>Count: 64</b></li>
+              <li class="underline2"style="margin-left: 80px;line-height:30px"><b>Soldered underneath the chessboard squares and to wires that connect to multiplexer(s)</b></li>
+              <li class="underline2"style="margin-left: 80px;line-height:30px"><b>Sends signal current to multiplexer(s) if magnetic field from chesspieces is sensed</b></li>
+
+              <li class="underline">16-to-1 Multiplexers </li>
+              <li class="underline2"style="margin-left: 80px;"><b>Count: 4</b></li>
+              <li class="underline2"style="margin-left: 80px;"><b>Bridge between electrical hardware and software</b></li>
+              <li class="underline2"style="margin-left: 80px;"><b>Each one takes input from 2 rows of the board</b></li>
+
+              <li class="underline">Arduino Uno REV3</li>
+              <li class="underline2"style="margin-left: 80px;"><b>DC 5521 input for direct powerbank connection</b></li>
+              <li class="underline2"style="margin-left: 80px;line-height:30px"><b>covered by a Terminal Block Breakout Module to decrease precision soldering</b></li>
+              <li class="underline">12 Volt Power Bank </li>
+              <li class="underline">LED Strips </li>
+            </ul>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <br>
+    <!--Electrical Slideshow-->
+    <h1 style="width: 75%;margin-left:auto; margin-right: auto; font-family: Oranienbaum; font-size: xx-large; text-align: center; background-color: #B4C89B;
+    border: 2px solid black; margin-bottom: -40px;padding: 50px;">BRINGING THE BOARD TO LIFE: Electrical</h1>
+
+    <div>
+      <br>
+
+ <div class="slideshow-container">
+
+
+  <div class="mySlides">
+    <img src="https://cdn.glitch.global/e590b6e9-4ece-4487-a898-7a7faac04200/image%201.jpeg?v=1679309821036" style="width:500px">
+    <div class="caption">
+      <p>Testing whether the reed sensors could process 5 volt signals. </p>
+    </div>
+  </div>
+
+
+  <div class="mySlides">
+    <img src="https://cdn.glitch.global/e590b6e9-4ece-4487-a898-7a7faac04200/image%202.jpeg?v=1679309824313" style="width:500px">
+    <div class="caption">
+      <p>Testing the magnetic sensitivity of the reed sensors through the plywood.</p>
+    </div>
+  </div>
+
+  <div class="mySlides">
+    <img src="https://cdn.glitch.global/e590b6e9-4ece-4487-a898-7a7faac04200/image%203.jpeg?v=1679309828353" style="width:500px">
+    <div class="caption">
+      <p>Mysha posing while displaying the underside of Chesster's chessboard top with the reedsensors attached.</p>
+  </div>
+  </div>
+
+  <div class="mySlides">
+    <img src="https://cdn.glitch.global/e590b6e9-4ece-4487-a898-7a7faac04200/mylinhled.jpg?v=1680481645216" style="width:500px">
+    <div class="caption">
+      <p>Mylinh setting up to solder the multiplexer wires to the reed sensors.</p>
+  </div>
+  </div>
+
+  <div class="mySlides">
+      <img src="https://cdn.glitch.global/e590b6e9-4ece-4487-a898-7a7faac04200/mylinh-grid_and_top.jpg?v=1680412819097" style="width: 500px;" >
+      <div class="caption">
+          <p>Mylinh posing with the both parts of Chesster's board. Pictured on the left is</p>
+          <p>the bottom box with the underlying chessboard grid structure inside. Mylinh holds</p>
+          <p>the top plank; the reed sensors and their respective wiring are attched to the exposed underside.</p>
+       </div>
+    </div>
+
+  <div class="mySlides">
+    <img src="https://cdn.glitch.global/e590b6e9-4ece-4487-a898-7a7faac04200/biglittobonding.jpg?v=1680472301612" style="width:500px">
+    <div class="caption">
+      <p>Our father Keven Cai comes to the rescue! Pictured to the right is him helping debug the multiplexers and Arduino.</p>
+  </div>
+  </div>
+  <div class="mySlides">
+    <img src="https://cdn.glitch.global/e590b6e9-4ece-4487-a898-7a7faac04200/arduino%2Bmultis.jpg?v=1680472315196" style="width:500px">
+    <div class="caption">
+      <p>The body of Chesster. The medium-sized green chip is our Arduino. Wires connect the Arduino to our 2 </p>
+         <p>breadboards; breadboards that are housing our 4 16-to-1 multiplexers.</p>
+  </div>
+  </div>
+  <div class="mySlides">
+    <img src="https://cdn.glitch.global/e590b6e9-4ece-4487-a898-7a7faac04200/bluetape.jpg?v=1680472311150" style="width:500px">
+    <div class="caption">
+      <p>Testing the LED’s accuracy when displaying the move the Chess AI wants to output. </p>
+         <p>The lights pictured display the knight moving.</p>
+  </div>
+  </div>
+  
+
+    <div class="mySlides">
+      <video width="720" controls style="margin-left:auto;margin-right:auto;">
+        <source src="https://cdn.glitch.me/e590b6e9-4ece-4487-a898-7a7faac04200/IMG_7229.mov?v=1680465645116" type="video/mp4">
+        <source src="https://cdn.glitch.me/e590b6e9-4ece-4487-a898-7a7faac04200/IMG_7229.mov?v=1680465645116" type="video/ogg">
+        Your browser does not support HTML video.
+      </video>
+      <div class="caption">
+          <p>Look at those beautiful lights!</p>
+          <p>Here is a demo of our LED system in action!</p>
+      </div>
+    </div>
+
+
+  </div>
+
+
+  <div style="">
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+<div style="margin-left: 65vh;">
+  <span class="dot" onclick="currentSlide(0)"></span>
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+  <span class="dot" onclick="currentSlide(9)"></span>
+  <span class="dot" onclick="currentSlide(10)"></span>
+  <span class="dot" onclick="currentSlide(11)"></span>
+</div>
+  <br>
+  <br>
+</div>
+<!--slideshow script-->
+<script>
+  let slideIndex = 0;
+  let timeoutId = null;
+  const slides = document.getElementsByClassName("mySlides");
+  const dots = document.getElementsByClassName("dot");
+  
+  showSlides();
+  function currentSlide(index) {
+       slideIndex = index;
+       showSlides();
+  }
+ function plusSlides(step) {
+    
+    if(step < 0) {
+        slideIndex -= 11;
+        
+        if(slideIndex < 0) {
+          slideIndex = slides.length - 1;
         }
-      </script>
+    }
+    
+    showSlides();
+ }
+  function showSlides() {
+    for(let i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+      dots[i].classList.remove('active');
+    }
+    slideIndex++;
+    if(slideIndex > slides.length) {
+      slideIndex = 1
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].classList.add('active');
+  }
+</script>
+
     <!--Footer-->
-    <footer>
-        <a href= "about.html">About</a>
-        <a href= "timeline.html">Process</a>
-        <a href= "mechanical.html">Mechanical</a>
-        <a href= "electrical.html">Electrical</a>
-        <a href= "software.html">Software</a>
-        <a href= "index.html">Home</a>
-    </footer>
+    <div id="footer">
+      <a href= "index.html">Home</a>
+      <a href= "software.html">Software</a>
+      <a href= "electrical.html">Electrical</a>
+      <a href= "mechanical.html">Mechanical</a>
+      <a href= "timeline.html">Process</a>
+      <a href= "about.html">About</a>
+    </div>
 </body>
 
 
